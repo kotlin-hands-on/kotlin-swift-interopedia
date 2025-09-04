@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.ksp)
     alias(libs.plugins.kmpNativeCoroutines)
+    alias(libs.plugins.kmmbridge)
 }
 
 kotlin {
@@ -52,4 +53,19 @@ android {
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
     }
+}
+
+kmmbridge {
+    frameworkName.set("shared")
+    githubReleaseArtifacts()
+    githubReleaseVersions()
+    versionPrefix.set("1.0")
+    
+    gitHubPublishVersion.set(
+        if (project.hasProperty("versionOverride")) {
+            project.property("versionOverride") as String
+        } else {
+            "1.0.${System.currentTimeMillis()}"
+        }
+    )
 }
