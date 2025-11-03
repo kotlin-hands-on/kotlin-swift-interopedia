@@ -17,7 +17,7 @@ The Kotlin/Native compiler generates Objective-C headers, which Swift code can i
 <li>Some features don’t work</li>
 </ul>
 
-<table><tr><td>Swift export, where the Kotlin API is directly exported as Swift declarations instead of Objective-C headers, is something that the Kotlin team is currently working on, and will resolve some of the difficulties experienced by Swift developers when consuming shared Kotlin code.</td></tr></table>
+<table><tr><td>Swift export, where the Kotlin API is directly exported as Swift declarations instead of Objective-C headers, is something that the Kotlin team is currently working on, and will resolve some of the difficulties experienced by Swift developers when consuming shared Kotlin code. You can find the table with the latest feature state <a href="https://kotl.in/swift-export-feature-status">here.</a></td></tr></table>
 
 ## How to use
 ### Interopedia
