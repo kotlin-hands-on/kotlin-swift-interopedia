@@ -17,6 +17,7 @@ coroutines = "1.7.3"
 junit = "4.13.2"
 ksp = "1.9.20-1.0.14"
 kmp-nativecoroutines = "1.0.0-ALPHA-21"
+kmmbridge = "1.2.1"
 kotlin = "1.9.21"
 
 [libraries]
@@ -44,3 +45,4 @@ jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kmpNativeCoroutines = { id = "com.rickclephas.kmp.nativecoroutines", version.ref = "kmp-nativecoroutines"}
+kmmbridge = { id = "co.touchlab.kmmbridge", version.ref = "kmmbridge" }

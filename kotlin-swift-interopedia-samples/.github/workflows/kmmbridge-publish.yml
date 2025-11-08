@@ -1,0 +1,24 @@
+name: KMMBridge Publish
+on:
+  workflow_dispatch:
+    inputs:
+      versionName:
+        description: 'Version name for this release'
+        required: true
+        default: '1.0.0'
+  push:
+    tags:
+      - '*'
+
+jobs:
+  call-kmmbridge-publish:
+    permissions:
+      contents: write
+      packages: write
+    uses: touchlab/KMMBridgeGithubWorkflow/.github/workflows/faktorybuild.yml@v1.1
+    with:
+      jvmVersion: 17
+      publishTask: kmmBridgePublish
+      xcodeVersion: 15.2
+    secrets:
+      gradle_params: -PversionOverride=${{ github.event.inputs.versionName || github.ref_name }}
