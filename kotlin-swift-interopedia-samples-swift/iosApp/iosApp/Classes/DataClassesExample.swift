@@ -7,10 +7,10 @@ func dataClassExample() {
 
     // Doesn't compile with the error
     // "Missing arguments for parameters 'param1', 'param2', 'param3' in call"
-//    let copy = data.doCopy()
+//    let copy = data.copy()
 //    print(copy)
 
-    let copy = data.doCopy(param1: "def", param2: 456, param3: false)
+    let copy = data.copy(param1: "def", param2: 456, param3: false)
     print("updated copy: \(copy)")
     print("isEqual: \(copy.isEqual(data))")
 }
