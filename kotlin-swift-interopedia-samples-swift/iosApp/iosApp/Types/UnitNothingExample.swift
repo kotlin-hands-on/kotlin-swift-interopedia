@@ -3,7 +3,7 @@ import shared
 
 func unitNothingExample(){
     let example = types.UnitNothing()
-    example.unitType(p: KotlinUnit())
+    example.unitType(p: ())
     //Doesn't compile - no init() function
     //example.nothingType(n: KotlinNothing())
     print(example.returnUnit())
