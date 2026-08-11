@@ -4,11 +4,11 @@ import shared
 @MainActor
 func flowsExample() {
     Task {
-        try await NumberFlowRepository().getNumbersSimple().collect(collector: AnyCollector())
+        try await coroutines.NumberFlowRepository().getNumbersSimple().collect(collector: AnyCollector())
     }
 }
 
-class AnyCollector: Kotlinx_coroutines_coreFlowCollector {
+class AnyCollector: ExportedKotlinPackages.kotlinx.coroutines.flow.FlowCollector {
     func emit(value: Any?) async throws {
         print("Got number: \(value!)")
     }

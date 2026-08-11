@@ -2,5 +2,5 @@ import Foundation
 import shared
 
 func topLevelFunctionsExample() {
-    TopLevelFunctionKt.topLevelFunction()
+    overview.TopLevelFunctionKt.topLevelFunction()
 }

@@ -6,11 +6,11 @@ class ChildClass : SuperClass {}
 
 func contravariantGenericsExample(){
     inGenericUsage(
-        generic: InGenericItem<ChildClass>() as! InGenericItem<SuperClass>
+        generic: generics.InGenericItem<ChildClass>() as! generics.InGenericItem<SuperClass>
     )
 }
     
-private func inGenericUsage(generic: InGenericItem<SuperClass>) {
-    let _: InGenericItem<ChildClass> = generic as! InGenericItem<ChildClass>
+private func inGenericUsage(generic: generics.InGenericItem<SuperClass>) {
+    let _: generics.InGenericItem<ChildClass> = generic as! generics.InGenericItem<ChildClass>
     print("inGenericUsage - ok")
 }

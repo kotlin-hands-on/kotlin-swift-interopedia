@@ -2,10 +2,10 @@ import Foundation
 import shared
 
 func boundedGenericsExample(){
-    class MyStricted : ForStricted {}
+    class MyStricted : generics.ForStricted {}
 
-    let result1 = StrictedGeneric(data: MyStricted())
+    let result1 = generics.StrictedGeneric(data: MyStricted())
     print(result1)
-    let result2 = StrictedGeneric(data: NSString("1122")) // Compiles
+    let result2 = generics.StrictedGeneric(data: NSString("1122")) // Compiles
     print(result2)
 }

@@ -3,7 +3,7 @@ import shared
 
 func optionalTypesExample3() {
     print(
-        OptionalBasicTypes(
+        types.OptionalBasicTypes(
             optionalByte: 1,
             optionalShort: 1,
             optionalInt: 1,
@@ -27,7 +27,7 @@ func optionalTypesExample2(
     booleanType: Bool
 ) {
     print(
-        OptionalBasicTypes(
+        types.OptionalBasicTypes(
             optionalByte: KotlinByte(value: byteType),
             optionalShort: KotlinShort(value: shortType),
             optionalInt: KotlinInt(value: intType),
@@ -51,7 +51,7 @@ func optionalTypesExample(
     optionalBoolean: Bool?
 ) {
     print(
-        OptionalBasicTypes(
+        types.OptionalBasicTypes(
             optionalByte: (optionalByte != nil) ? KotlinByte(value: optionalByte!) : nil,
             optionalShort: (optionalShort != nil) ? KotlinShort(value: optionalShort!) : nil,
             optionalInt: (optionalInt != nil) ? KotlinInt(value: optionalInt!) : nil,

@@ -2,43 +2,43 @@ import Foundation
 import shared
 
 func publicPropertyExample(){
-    print(PublicClass().publicProperty)
+    print(overview.PublicClass().publicProperty)
 }
 
 func protectedPropertyExample(){
-    print(PublicClass().protectedProperty)
+    print(overview.PublicClass().protectedProperty)
 }
 
 func internalPropertyExample(){
     //Does not compile
-    //print(PublicClass().internalProperty)
+    //print(overview.PublicClass().internalProperty)
 }
 
 func privatePropertyExample(){
     //Does not compile
-    //print(PublicClass().privateProperty)
+    //print(overview.PublicClass().privateProperty)
 }
 
 func publicFunctionExample(){
-    PublicClass().publicFun()
+    overview.PublicClass().publicFun()
 }
 
 func protectedFunctionExample(){
-    PublicClass().protectedFun()
+    overview.PublicClass().protectedFun()
 }
 
 func internalFunctionExample(){
     //Does not compile
-    //PublicClass().internalFun()
+    //overview.PublicClass().internalFun()
 }
 
 func privateFunctionExample(){
     //Does not compile
-    //PublicClass().privateFun()
+    //overview.PublicClass().privateFun()
 }
 
 func internalClassExample(){
     //Does not compile
-    //InternalClass()
+    //overview.InternalClass()
 }
 

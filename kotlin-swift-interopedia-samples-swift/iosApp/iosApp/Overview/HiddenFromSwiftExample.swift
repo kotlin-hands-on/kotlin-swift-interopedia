@@ -3,5 +3,5 @@ import shared
 
 func hiddenFromObjCExample(){
     //Uncomment to see error
-    //myKotlinOnlyFunction()
+    //overview.myKotlinOnlyFunction()
 }

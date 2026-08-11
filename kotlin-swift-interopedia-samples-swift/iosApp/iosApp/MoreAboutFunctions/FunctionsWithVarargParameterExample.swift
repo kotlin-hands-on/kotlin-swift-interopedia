@@ -2,9 +2,9 @@ import Foundation
 import shared
 
 func functionsWithVarargParameterExample(){
-    let arr = KotlinArray<NSString>(
+    let arr = kotlin.Array<NSString>(
         size: 10,
         init: { index in "\(index)" as NSString }
     )
-    FunctionWithVarargParameterKt.funcWithVararg(item: arr)
+    moreaboutfunctions.FunctionWithVarargParameterKt.funcWithVararg(item: arr)
 }

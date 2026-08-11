@@ -1,7 +1,7 @@
 import Foundation
 import shared
 
-class OpenClassExample: OpenClassWithConstructorParams {
+class OpenClassExample: classesandinterfaces.OpenClassWithConstructorParams {
 //    // Overriding leads to an exception at runtime on instantiation 
 //    override func finalFunctionInClass() -> String {
 //        "Final function can't be overridden"

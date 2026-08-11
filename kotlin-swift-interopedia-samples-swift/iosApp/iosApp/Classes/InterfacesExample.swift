@@ -1,7 +1,7 @@
 import Foundation
 import shared
 
-class InterfacesExample : Interfaces {
+class InterfacesExample : classesandinterfaces.Interfaces {
     func defaultParams(param1: String, param2: Int32) -> String {
         return "param1: \(param1) ; param2: \(param2)"
     }

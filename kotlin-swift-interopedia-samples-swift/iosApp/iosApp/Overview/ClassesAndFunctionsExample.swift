@@ -2,6 +2,6 @@ import Foundation
 import shared
 
 func classesAndFunctionsExample() {
-    let simple = SimpleKotlinClass()
+    let simple = functionsandproperties.SimpleKotlinClass()
     print(simple.simpleKotlinFunction())
 }

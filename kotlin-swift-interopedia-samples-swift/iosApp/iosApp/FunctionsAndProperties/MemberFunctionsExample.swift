@@ -2,7 +2,7 @@ import Foundation
 import shared
 
 func memberFunctionsExample() {
-    let myClass = MyKotlinClass()
+    let myClass = functionsandproperties.MyKotlinClass()
 
 //     myClass.kotlinInternalFunction(),
 //     myClass.kotlinPrivateFunction(),

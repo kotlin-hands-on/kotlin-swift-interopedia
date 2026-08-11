@@ -2,5 +2,5 @@ import Foundation
 import shared
 
 func extensionFunctionOverUsualClassExample(){
-    UsualClass().extensionFunction()
+    extensions.UsualClass().extensionFunction()
 }

@@ -2,5 +2,5 @@ import Foundation
 import shared
 
 func extensionPropertyOnPlatformClassExample(){
-    print(ExtensionPropertyPlatformClassKt.myExtensionProperty("123"))
+    print(extensions.ExtensionPropertyPlatformClassKt.myExtensionProperty("123"))
 }

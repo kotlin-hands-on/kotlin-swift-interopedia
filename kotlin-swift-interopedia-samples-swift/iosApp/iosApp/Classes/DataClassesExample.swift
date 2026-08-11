@@ -2,7 +2,7 @@ import Foundation
 import shared
 
 func dataClassExample() {
-    let data = DataClass(param1: "abc", param2: 123, param3: true)
+    let data = classesandinterfaces.DataClass(param1: "abc", param2: 123, param3: true)
     print("data: \(data)")
 
     // Doesn't compile with the error

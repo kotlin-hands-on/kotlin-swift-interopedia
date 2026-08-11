@@ -2,7 +2,7 @@ import Foundation
 import shared
 
 func inlineFunctionsExample() {
-    InlineFunctionKt.inlineFunction {
+    moreaboutfunctions.InlineFunctionKt.inlineFunction {
         print("I'm inside inline!!!")
     }
 }

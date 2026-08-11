@@ -1,7 +1,7 @@
 import Foundation
 import shared
 
-class ConcreteClass : AbstractClass {
+class ConcreteClass : classesandinterfaces.AbstractClass {
 
     // Swift doesn't require you to override the `forOverride` method,
     // the code will compile successfully

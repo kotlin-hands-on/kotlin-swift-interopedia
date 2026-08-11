@@ -6,22 +6,22 @@ func sealedInterfacesExample(){
     switchOnSealedInterfaces(sealedInterfaces: SealedInterfacesSecondImpl())
 }
     
-private func switchOnSealedInterfaces(sealedInterfaces: SealedInterfaces){
+private func switchOnSealedInterfaces(sealedInterfaces: classesandinterfaces.SealedInterfaces){
     switch(sealedInterfaces){
-    case is SealedInterfacesFirst: print((sealedInterfaces as! any SealedInterfacesFirst as SealedInterfacesFirst).firstFunctionExample())
-    case is SealedInterfacesSecond: print((sealedInterfaces as! any SealedInterfacesSecond as SealedInterfacesSecond).secondFunctionExample())
+    case is classesandinterfaces.SealedInterfacesFirst: print((sealedInterfaces as! any classesandinterfaces.SealedInterfacesFirst as classesandinterfaces.SealedInterfacesFirst).firstFunctionExample())
+    case is classesandinterfaces.SealedInterfacesSecond: print((sealedInterfaces as! any classesandinterfaces.SealedInterfacesSecond as classesandinterfaces.SealedInterfacesSecond).secondFunctionExample())
     default: print("default")
     }
 }
 
 
-class SealedInterfacesFirstImpl : SealedInterfacesFirst {
+class SealedInterfacesFirstImpl : classesandinterfaces.SealedInterfacesFirst {
     func firstFunctionExample() -> String {
         return "first"
     }
 }
 
-class SealedInterfacesSecondImpl : SealedInterfacesSecond {
+class SealedInterfacesSecondImpl : classesandinterfaces.SealedInterfacesSecond {
     func secondFunctionExample() -> String {
         return "second"
     }

@@ -5,7 +5,7 @@ import shared
 func cancellationOfSuspendFunctionExample() {
     Task {
         do {
-            let thing = try await ThingRepository().getThingSimple(succeed: true)
+            let thing = try await coroutines.ThingRepository().getThingSimple(succeed: true)
             print("Thing is \(thing).")
         }
         catch {

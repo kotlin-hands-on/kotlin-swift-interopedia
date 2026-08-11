@@ -3,6 +3,6 @@ import shared
 
 func functionsWithDefaultArgumentsExample(){
     // Doesn't compile:
-    //FunctionWithDefaultArgumentsClass().defaultParamsFunction(funcParam1: "String")
-    FunctionWithDefaultArgumentsClass().defaultParamsFunction(funcParam1: "1", funcParam2: 100)
+    //moreaboutfunctions.FunctionWithDefaultArgumentsClass().defaultParamsFunction(funcParam1: "String")
+    moreaboutfunctions.FunctionWithDefaultArgumentsClass().defaultParamsFunction(funcParam1: "1", funcParam2: 100)
 }

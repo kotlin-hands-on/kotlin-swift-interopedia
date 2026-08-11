@@ -4,11 +4,11 @@ import shared
 @MainActor
 func flowsWithCancellationExample() {
     Task {
-        try await NumberFlowRepository().getNumbersSimple().collect(collector: CancellationCollector())
+        try await coroutines.NumberFlowRepository().getNumbersSimple().collect(collector: CancellationCollector())
     }.cancel()
 }
 
-class CancellationCollector: Kotlinx_coroutines_coreFlowCollector {
+class CancellationCollector: ExportedKotlinPackages.kotlinx.coroutines.flow.FlowCollector {
     func emit(value: Any?) async throws {
         print("Got number: \(value!)")
     }

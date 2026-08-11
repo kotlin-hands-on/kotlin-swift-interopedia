@@ -101,7 +101,7 @@ func overviewSection() -> InteropSection {
             You can see certain KDoc comments at development time. In Xcode, use Option+Double left click to see the docs. Note that many KDocs features don't work in Xcode, like properties on constructors (@property) aren't visible. In Fleet, use the 'Show Documentation' action.
             """
         ) {
-            let comments = KDocComments(commentProperty: "property")
+            let comments = overview.KDocComments(commentProperty: "property")
             comments.commentFunction(arg1: 3)
         }
     ])

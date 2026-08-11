@@ -2,7 +2,7 @@ import Foundation
 import shared
 
 func objCNameExample(){
-    let array = MySwiftArray()
+    let array = overview.MySwiftArray()
     let index = array.index(of: "element")
     print(index)
 }

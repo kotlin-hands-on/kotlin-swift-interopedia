@@ -2,7 +2,7 @@ import Foundation
 import shared
 
 func unitNothingExample(){
-    let example = UnitNothing()
+    let example = types.UnitNothing()
     example.unitType(p: KotlinUnit())
     //Doesn't compile - no init() function
     //example.nothingType(n: KotlinNothing())

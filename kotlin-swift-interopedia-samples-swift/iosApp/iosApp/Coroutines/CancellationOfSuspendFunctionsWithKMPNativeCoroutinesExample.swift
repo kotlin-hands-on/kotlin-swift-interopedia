@@ -7,7 +7,7 @@ import KMPNativeCoroutinesCore
 func cancellationOfSuspendFunctionWithKMPNativeCoroutinesExample() {
     Task {
         do {
-            let result = try await asyncFunction(for: ThingRepository().getThingAnnotated(succeed: true))
+            let result = try await asyncFunction(for: coroutines.ThingRepository().getThingAnnotated(succeed: true))
             print("Got result: \(result)")
         } catch {
             print("Failed with error: \(error)")
