@@ -15,8 +15,6 @@ compose-compiler = "1.5.5"
 compose-plugin = "1.5.11"
 coroutines = "1.7.3"
 junit = "4.13.2"
-ksp = "1.9.20-1.0.14"
-kmp-nativecoroutines = "1.0.0-ALPHA-21"
 kotlin = "1.9.21"
 
 [libraries]
@@ -42,5 +40,3 @@ androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
-kmpNativeCoroutines = { id = "com.rickclephas.kmp.nativecoroutines", version.ref = "kmp-nativecoroutines"}

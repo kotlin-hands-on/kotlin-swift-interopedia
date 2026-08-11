@@ -1,4 +1,5 @@
 {
+  "originHash" : "609133b310e9c4579a1d75e9696445b51bd516493282d44ac82bc290103e37c2",
   "pins" : [
     {
       "identity" : "kmp-nativecoroutines",
@@ -6,7 +7,7 @@
       "location" : "https://github.com/rickclephas/KMP-NativeCoroutines.git",
       "state" : {
         "branch" : "master",
-        "revision" : "03b2f66f1270b253ee760ea60558ce666288d872"
+        "revision" : "94b7047bfc08061706807f594120a7de810e9901"
       }
     },
     {
@@ -19,5 +20,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

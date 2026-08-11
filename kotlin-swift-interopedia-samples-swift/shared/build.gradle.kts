@@ -2,8 +2,6 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
-    alias(libs.plugins.ksp)
-    alias(libs.plugins.kmpNativeCoroutines)
 }
 
 kotlin {
