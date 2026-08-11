@@ -2,7 +2,7 @@ import Foundation
 import shared
 
 func functionsExpectingLambdasWithReceiverExample() {
-    moreaboutfunctions.FunctionExpectingLambdaWithReceiverKt.funcWithExtension(extension: { usualClassExample in
+    moreaboutfunctions.funcWithExtension(extension: { usualClassExample in
         usualClassExample.param1 = "changed"
         usualClassExample.param2 = 2
         usualClassExample.param3 = 3

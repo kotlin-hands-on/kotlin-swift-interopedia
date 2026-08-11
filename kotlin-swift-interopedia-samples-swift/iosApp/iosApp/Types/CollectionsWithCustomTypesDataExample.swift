@@ -7,10 +7,10 @@ func collectionsWithCustomTypesExample(){
     let inSet: Set<types.NotPrimitiveType> = [notPrimitive]
     let inMap: [String: types.NotPrimitiveType] = ["key": notPrimitive]
 
-    let myList: [types.NotPrimitiveType] = types.CollectionsWithCustomTypesKt.notPrimitiveTypeList(list: inList)
+    let myList: [types.NotPrimitiveType] = types.notPrimitiveTypeList(list: inList)
     print(myList)
-    let mySet: Set<types.NotPrimitiveType> = types.CollectionsWithCustomTypesKt.notPrimitiveTypeSet(set: inSet)
+    let mySet: Set<types.NotPrimitiveType> = types.notPrimitiveTypeSet(set: inSet)
     print(mySet)
-    let myMap: [String: types.NotPrimitiveType] = types.CollectionsWithCustomTypesKt.notPrimitiveTypeMap(map: inMap)
+    let myMap: [String: types.NotPrimitiveType] = types.notPrimitiveTypeMap(map: inMap)
     print(myMap)
 }

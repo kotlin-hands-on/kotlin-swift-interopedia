@@ -6,5 +6,5 @@ func functionsWithVarargParameterExample(){
         size: 10,
         init: { index in "\(index)" as NSString }
     )
-    moreaboutfunctions.FunctionWithVarargParameterKt.funcWithVararg(item: arr)
+    moreaboutfunctions.funcWithVararg(item: arr)
 }

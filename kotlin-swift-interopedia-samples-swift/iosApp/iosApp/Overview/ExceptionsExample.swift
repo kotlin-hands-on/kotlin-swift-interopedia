@@ -3,7 +3,7 @@ import shared
 
 func checkedExceptionExample()  {
     do {
-        try overview.ExceptionsKt.functionThrowsDeclaredException()
+        try overview.functionThrowsDeclaredException()
         print("Shouldn't be reachable")
     } catch {
         print("Error is handled: \(error)")
@@ -11,5 +11,5 @@ func checkedExceptionExample()  {
 }
 
 func uncheckedExceptionExample() {
-    overview.ExceptionsKt.functionThrowsUndeclaredException()
+    overview.functionThrowsUndeclaredException()
 }
