@@ -2,13 +2,13 @@ import Foundation
 import shared
 
 func getCollectionsExample(){
-    let a: Array<KotlinInt> = overview.getList()
+     let a: Array<Int32> = overview.getList()
     print(a)
-    let a2: kotlin.Array<KotlinInt> = overview.getArray()
+    let a2: kotlin.Array<Int32> = overview.getArray()
     print(a2)
-    let d: Dictionary<String, KotlinInt> = overview.getMap()
+    let d: Dictionary<String, Int32> = overview.getMap()
     print(d)
-    let s: Set<KotlinInt> = overview.getSet()
+    let s: Set<Int32> = overview.getSet()
     print(s)
 }
 

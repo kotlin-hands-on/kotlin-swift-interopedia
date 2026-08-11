@@ -28,14 +28,14 @@ func optionalTypesExample2(
 ) {
     print(
         types.OptionalBasicTypes(
-            optionalByte: KotlinByte(value: byteType),
-            optionalShort: KotlinShort(value: shortType),
-            optionalInt: KotlinInt(value: intType),
-            optionalLong: KotlinLong(value: longType),
-            optionalFloat: KotlinFloat(value: floatType),
-            optionalDouble: KotlinDouble(value: doubleType),
+            optionalByte: byteType,
+            optionalShort: shortType,
+            optionalInt: intType,
+            optionalLong: longType,
+            optionalFloat: floatType,
+            optionalDouble: doubleType,
             optionalString: stringType,
-            optionalBoolean: KotlinBoolean(value: booleanType)
+            optionalBoolean: booleanType
         )
     )
 }
@@ -52,14 +52,14 @@ func optionalTypesExample(
 ) {
     print(
         types.OptionalBasicTypes(
-            optionalByte: (optionalByte != nil) ? KotlinByte(value: optionalByte!) : nil,
-            optionalShort: (optionalShort != nil) ? KotlinShort(value: optionalShort!) : nil,
-            optionalInt: (optionalInt != nil) ? KotlinInt(value: optionalInt!) : nil,
-            optionalLong: (optionalLong != nil) ? KotlinLong(value: optionalLong!) : nil,
-            optionalFloat: (optionalFloat != nil) ? KotlinFloat(value: optionalFloat!) : nil,
-            optionalDouble: (optionalDouble != nil) ? KotlinDouble(value: optionalDouble!) : nil,
+            optionalByte: optionalByte,
+            optionalShort: optionalShort,
+            optionalInt: optionalInt,
+            optionalLong: optionalLong,
+            optionalFloat: optionalFloat,
+            optionalDouble: optionalDouble,
             optionalString: optionalString,
-            optionalBoolean: (optionalBoolean != nil) ? KotlinBoolean(value: optionalBoolean!) : nil
+            optionalBoolean: optionalBoolean
         )
     )
 }
