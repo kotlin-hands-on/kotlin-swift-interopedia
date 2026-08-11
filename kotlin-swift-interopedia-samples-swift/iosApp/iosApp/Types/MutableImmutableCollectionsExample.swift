@@ -19,8 +19,9 @@ func listMutableListExample() {
     var mutableList: [Int32] = [1, 2, 3]
     let notMutableList: [Int32] = [1, 2, 3]
 
-    print(types.mutableListType(list: NSMutableArray(array: notMutableList)))
-    print(types.mutableListType(list: NSMutableArray(array: mutableList)))
+//    Mutable collections as inputs aren' supported
+//    print(types.mutableListType(list: NSMutableArray(array: notMutableList)))
+//    print(types.mutableListType(list: NSMutableArray(array: mutableList)))
 }
 
 func setMutableSetExample() {
@@ -30,17 +31,19 @@ func setMutableSetExample() {
     mutableSet = types.setType(set: mutableSet)
     print(types.setType(set: notMutableSet))
 
-    print(types.mutableSetType(set: KotlinMutableSet(set: mutableSet)))
-    print(types.mutableSetType(set: KotlinMutableSet(set: notMutableSet)))
+//    Mutable collections as inputs aren' supported
+//    print(types.mutableSetType(set: KotlinMutableSet(set: mutableSet)))
+//    print(types.mutableSetType(set: KotlinMutableSet(set: notMutableSet)))
 }
 
 func mutableSetExample() {
     var mutableSet: Set<Int32> = Set(arrayLiteral: 1, 2, 3)
 
-    mutableSet = types.mutableSetType(
-        set: KotlinMutableSet(set: mutableSet)
-    ) as! Set<Int32>
-    print(mutableSet)
+//    Mutable collections as inputs aren' supported
+//    mutableSet = types.mutableSetType(
+//        set: KotlinMutableSet(set: mutableSet)
+//    ) as! Set<Int32>
+//    print(mutableSet)
 }
 
 func mapMutableMapExample() {
@@ -64,20 +67,21 @@ func mapMutableMapExample() {
     print(types.mapType(map: notMutableMap))
     print(types.mapType(map: notMutableMapLiteral))
 
-    print(types.mutableMapType(
-        map: KotlinMutableDictionary(dictionary: mutableMap)
-    ))
-    print(types.mutableMapType(
-        map: KotlinMutableDictionary(dictionary: mutableMapLiteral)
-    ))
-    print(types.mutableMapType(
-        map: KotlinMutableDictionary(dictionary: notMutableMap)
-    ))
-    print(types.mutableMapType(
-        map: KotlinMutableDictionary(dictionary: notMutableMapLiteral)
-    ))
-
-    print(types.mutableMapType(
-        map: KotlinMutableDictionary(dictionary: mutableMap)
-    ) as! Dictionary<String, Int32>)
+//    Mutable collections as inputs aren' supported
+//    print(types.mutableMapType(
+//        map: KotlinMutableDictionary(dictionary: mutableMap)
+//    ))
+//    print(types.mutableMapType(
+//        map: KotlinMutableDictionary(dictionary: mutableMapLiteral)
+//    ))
+//    print(types.mutableMapType(
+//        map: KotlinMutableDictionary(dictionary: notMutableMap)
+//    ))
+//    print(types.mutableMapType(
+//        map: KotlinMutableDictionary(dictionary: notMutableMapLiteral)
+//    ))
+//
+//    print(types.mutableMapType(
+//        map: KotlinMutableDictionary(dictionary: mutableMap)
+//    ) as! Dictionary<String, Int32>)
 }
