@@ -15,7 +15,7 @@ compose-compiler = "1.5.5"
 compose-plugin = "1.5.11"
 coroutines = "1.7.3"
 junit = "4.13.2"
-kotlin = "1.9.21"
+kotlin = "2.5.0-dev-4433"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
