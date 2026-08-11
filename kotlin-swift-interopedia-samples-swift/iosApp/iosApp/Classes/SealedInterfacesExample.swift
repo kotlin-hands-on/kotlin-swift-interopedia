@@ -8,10 +8,9 @@ func sealedInterfacesExample(){
 }
     
 private func switchOnSealedInterfaces(sealedInterfaces: classesandinterfaces.SealedInterfaces){
-    switch(sealedInterfaces){
-    case is classesandinterfaces.SealedInterfacesFirst: print((sealedInterfaces as! any classesandinterfaces.SealedInterfacesFirst as classesandinterfaces.SealedInterfacesFirst).firstFunctionExample())
-    case is classesandinterfaces.SealedInterfacesSecond: print((sealedInterfaces as! any classesandinterfaces.SealedInterfacesSecond as classesandinterfaces.SealedInterfacesSecond).secondFunctionExample())
-    default: print("default")
+    switch(sealedInterfaces.sealedType()) {
+    case let .first(type): print(type.value.firstFunctionExample())
+    case let .second(type): print(type.value.secondFunctionExample())
     }
 }
 
