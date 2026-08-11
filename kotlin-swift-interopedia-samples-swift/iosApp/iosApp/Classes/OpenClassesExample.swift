@@ -15,7 +15,9 @@ class OpenClassExample: classesandinterfaces.OpenClassWithConstructorParams {
 func openClassExample() {
     let openClass = OpenClassExample(param1: "123", param2: true)
 
-    print("Accessing field: \(openClass.someField)")
+    // Swift can't access protected property
+    // print("Accessing field: \(openClass.someField)")
+    
     print("Calling \(openClass.finalFunctionInClass())")
     print("Calling \(openClass.functionCanBeOverridden())")
 }

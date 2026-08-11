@@ -6,7 +6,8 @@ func publicPropertyExample(){
 }
 
 func protectedPropertyExample(){
-    print(overview.PublicClass().protectedProperty)
+    //Does not compile
+    //print(overview.PublicClass().protectedProperty)
 }
 
 func internalPropertyExample(){
@@ -24,7 +25,8 @@ func publicFunctionExample(){
 }
 
 func protectedFunctionExample(){
-    overview.PublicClass().protectedFun()
+    //Does not compile
+    //overview.PublicClass().protectedFun()
 }
 
 func internalFunctionExample(){

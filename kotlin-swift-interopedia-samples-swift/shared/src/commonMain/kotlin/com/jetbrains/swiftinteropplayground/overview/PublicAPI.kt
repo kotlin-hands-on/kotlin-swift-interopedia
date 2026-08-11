@@ -2,7 +2,7 @@ package com.jetbrains.swiftinteropplayground.overview
 
 class PublicClass {
     val publicProperty = "Swift can access public property"
-    protected val protectedProperty = "Swift can access protected property"
+    protected val protectedProperty = "Swift can't access protected property"
     private val privateProperty = "Swift can't access private property"
     internal val internalProperty = "Swift can't access internal property"
 
@@ -11,7 +11,7 @@ class PublicClass {
     }
 
     protected fun protectedFun(){
-        println("Swift can access protected function")
+        println("Swift can't access protected function")
     }
 
     private fun privateFun(){
