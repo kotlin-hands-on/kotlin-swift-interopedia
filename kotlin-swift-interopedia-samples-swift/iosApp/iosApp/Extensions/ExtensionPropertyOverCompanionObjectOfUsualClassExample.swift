@@ -2,5 +2,5 @@ import Foundation
 import shared
 
 func extensionPropertyOverCompanionObjectOfUsualClassExample(){
-    print(extensions.ExtensionPropertiesCompanionObjectUsualClass.Companion.shared.EXT_PROP)
+    print(extensions.getEXT_PROP(extensions.ExtensionPropertiesCompanionObjectUsualClass.Companion.shared))
 }

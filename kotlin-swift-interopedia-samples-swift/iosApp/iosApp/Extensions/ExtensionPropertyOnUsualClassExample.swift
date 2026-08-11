@@ -2,5 +2,5 @@ import Foundation
 import shared
 
 func extensionPropertyOnUsualClassExample() {
-    print(extensions.ExtensionPropertyUsualClass().extensionProperty)
+    print(extensions.getExtensionProperty(extensions.ExtensionPropertyUsualClass()))
 }
