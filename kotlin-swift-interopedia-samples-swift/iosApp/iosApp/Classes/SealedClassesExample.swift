@@ -2,10 +2,10 @@ import Foundation
 import shared
 
 func sealedClassExample() {
-    usingKotlinSealedClass(s: classesandinterfaces.SealedClass.Object())
+    usingKotlinSealedClass(s: classesandinterfaces.SealedClass.Object.shared)
     usingKotlinSealedClass(s: classesandinterfaces.SealedClass.Simple(param1: "param1"))
     usingKotlinSealedClass(s: classesandinterfaces.SealedClass.Data(param1: "param1", param2: true))
-    usingSwiftCounterpart(sealedClass: classesandinterfaces.SealedClass.Object())
+    usingSwiftCounterpart(sealedClass: classesandinterfaces.SealedClass.Object.shared)
     usingSwiftCounterpart(sealedClass: classesandinterfaces.SealedClass.Simple(param1: "param1"))
     usingSwiftCounterpart(sealedClass: classesandinterfaces.SealedClass.Data(param1: "param1", param2: true))
 }
