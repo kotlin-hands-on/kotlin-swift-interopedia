@@ -1,9 +1,10 @@
 import Foundation
 import shared
+import KotlinRuntime
 
 func sealedInterfacesExample(){
-    switchOnSealedInterfaces(sealedInterfaces: SealedInterfacesFirstImpl())
-    switchOnSealedInterfaces(sealedInterfaces: SealedInterfacesSecondImpl())
+    switchOnSealedInterfaces(sealedInterfaces: (nil as SealedInterfacesFirstImpl?)!) // SealedInterfacesFirstImpl()
+    switchOnSealedInterfaces(sealedInterfaces: (nil as SealedInterfacesSecondImpl?)!) // SealedInterfacesSecondImpl()
 }
     
 private func switchOnSealedInterfaces(sealedInterfaces: classesandinterfaces.SealedInterfaces){
@@ -15,13 +16,13 @@ private func switchOnSealedInterfaces(sealedInterfaces: classesandinterfaces.Sea
 }
 
 
-class SealedInterfacesFirstImpl : classesandinterfaces.SealedInterfacesFirst {
+class SealedInterfacesFirstImpl : KotlinBase, classesandinterfaces.SealedInterfaces.First {
     func firstFunctionExample() -> String {
         return "first"
     }
 }
 
-class SealedInterfacesSecondImpl : classesandinterfaces.SealedInterfacesSecond {
+class SealedInterfacesSecondImpl : KotlinBase, classesandinterfaces.SealedInterfaces.Second {
     func secondFunctionExample() -> String {
         return "second"
     }

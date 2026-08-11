@@ -1,7 +1,8 @@
 import Foundation
 import shared
+import KotlinRuntime
 
-class InterfacesExample : classesandinterfaces.Interfaces {
+class InterfacesExample : KotlinBase, classesandinterfaces.Interfaces {
     func defaultParams(param1: String, param2: Int32) -> String {
         return "param1: \(param1) ; param2: \(param2)"
     }
@@ -20,7 +21,7 @@ class InterfacesExample : classesandinterfaces.Interfaces {
 }
 
 func interfacesExample(){
-    let ex = InterfacesExample()
+    let ex: InterfacesExample = (nil as InterfacesExample?)! // InterfacesExample()
     print(ex.defaultParams(param1: "123", param2: 234))
     print(ex.functionWithParam(param1: "abc"))
     print(ex.simpleFunction())
