@@ -4,7 +4,7 @@ import shared
 func getCollectionsExample(){
      let a: Array<Int32> = overview.getList()
     print(a)
-    let a2: kotlin.Array<Int32> = overview.getArray()
+    let a2: kotlin.Array = overview.getArray()
     print(a2)
     let d: Dictionary<String, Int32> = overview.getMap()
     print(d)
