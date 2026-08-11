@@ -2,9 +2,5 @@ import Foundation
 import shared
 
 func functionsWithVarargParameterExample(){
-    let arr = kotlin.Array(
-        size: 10,
-        init: { index in "\(index)" }
-    )
-    moreaboutfunctions.funcWithVararg(item: arr)
+    moreaboutfunctions.funcWithVararg(item: "0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
 }
