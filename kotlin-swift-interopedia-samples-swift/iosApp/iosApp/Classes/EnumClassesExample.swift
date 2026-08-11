@@ -5,7 +5,7 @@ func enumClassExample() {
     let e1 = classesandinterfaces.EnumClass.ENTRY_ONE
     let _ = classesandinterfaces.EnumClass.ENTRY_TWO
 
-    let _ = classesandinterfaces.EnumClass.ENTRY_ONE.name
+    let _ = classesandinterfaces.EnumClass.ENTRY_ONE.description
     let _ = classesandinterfaces.EnumClass.ENTRY_TWO.type
 
     let _ = classesandinterfaces.EnumClass.Companion.shared.findByType(type: "entry_two")
