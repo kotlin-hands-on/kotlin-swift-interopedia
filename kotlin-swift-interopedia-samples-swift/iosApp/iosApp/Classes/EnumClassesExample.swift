@@ -8,8 +8,8 @@ func enumClassExample() {
     let _ = classesandinterfaces.EnumClass.ENTRY_ONE.name
     let _ = classesandinterfaces.EnumClass.ENTRY_TWO.type
 
-    let _ = classesandinterfaces.EnumClass.companion.findByType(type: "entry_two")
-    let optionalResult = classesandinterfaces.EnumClass.companion.findByType(type: "entry_two_trheee")
+    let _ = classesandinterfaces.EnumClass.Companion.shared.findByType(type: "entry_two")
+    let optionalResult = classesandinterfaces.EnumClass.Companion.shared.findByType(type: "entry_two_trheee")
 
     print("Enum example: \(e1)")
     print("Switching: \(switchEnumClass(enumClassExample: e1))")

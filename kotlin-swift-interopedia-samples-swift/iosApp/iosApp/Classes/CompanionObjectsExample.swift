@@ -2,5 +2,5 @@ import Foundation
 import shared
 
 func companionObjectExample() {
-    print(classesandinterfaces.CompanionObjectClass.companion.CONST_VAL_EXAMPLE)
+    print(classesandinterfaces.CompanionObjectClass.Companion.shared.CONST_VAL_EXAMPLE)
 }
