@@ -3,7 +3,7 @@ import shared
 
 extension overview.Person {
     var name: (firstName: String, lastName: String) {
-        let namePair = __namePair
+        let namePair = namePair
         return (namePair.first! as String, namePair.second! as String)
     }
 }
