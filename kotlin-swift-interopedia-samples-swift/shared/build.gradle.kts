@@ -45,6 +45,11 @@ kotlin {
             implementation(libs.coroutines)
         }
     }
+
+    swiftExport {
+        moduleName = "shared"
+        flattenPackage = "com.jetbrains.swiftinteropplayground"
+    }
 }
 
 android {
